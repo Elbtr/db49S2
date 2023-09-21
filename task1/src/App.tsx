@@ -71,7 +71,7 @@ class App extends Component<Object, CountryTerritory & ValueFormSection> {
     this.fetchApidistricts();
     this.fetchApiVillages();
   }
-  componentDidUpdate(prevProps: any, prevState: any) {
+  componentDidUpdate( prevState: any) {
     if (prevState.selectedProvinceId !== this.state.selectedProvinceId) {
       this.fetchApiRegencies();
     }
